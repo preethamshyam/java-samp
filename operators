@@ -1,0 +1,84 @@
+package samples;
+
+public class opera
+{
+int a,b,c,d,e;
+opera(int x, int y)
+{
+x=a;
+y=b;
+}
+void add()
+{
+c=a+b;
+System.out.println("sum of the given two num is"+c);
+}
+void sub()
+{
+c=a-b;
+System.out.println("difference of the given two numbers is"+c);
+}
+void multi()
+{
+c=a*b;
+System.out.println("product of the given two numbers is "+c);
+}
+void divide()
+{
+c=a/b;
+System.out.println("quotient of the given numbers is "+c);
+}
+void module()
+{
+c=a%b;
+System.out.println("reminder of the given number is "+c);
+}
+void post()
+{
+c=(++a)*b;
+System.out.println("postfix of given num "+c);
+}
+void or()
+{
+	c=a|b;
+	System.out.println("using bitwise or operator "+c);
+}
+void and()
+{
+	c=a&b;
+	System.out.println("using bitwise and operator "+c);
+}
+void not()
+{
+	c=a^b;
+	System.out.println("using bitwise not operator " +c);
+}
+void prob()
+{
+	c=((~a)&b)|(a&(~b));
+	System.out.println("bitwise value of (~a&b)|(a&~b) = "+c);
+}
+public static void main(String args[])
+{
+	
+opera obj1=new opera(10,5);
+obj1.add();
+obj1.sub();
+obj1.multi();
+obj1.divide();
+obj1.module();
+obj1.post();
+obj1.or();
+obj1.and();
+obj1.not();
+obj1.prob();
+}
+}
+
+ERROR : 
+sum of the given two num is0
+difference of the given two numbers is0Exception in thread "main" 
+product of the given two numbers is 0
+java.lang.ArithmeticException: / by zero
+	at samples.opera.divide(opera.java:28)
+	at samples.opera.main(opera.java:68)
