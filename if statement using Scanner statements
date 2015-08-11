@@ -1,0 +1,42 @@
+
+package control;
+
+import java.util.Scanner;
+
+public class ifstatement 
+{
+	public static void main(String args[])
+{
+		System.out.println("Enter the 1st num to be compared");
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+		System.out.println("Enter the second num to be compared");
+		int b=s.nextInt();
+		System.out.println("enter the third num to be comparted:");
+		int c=s.nextInt();
+	
+	if(a>b && a>c)
+	{
+		System.out.println(a+" is greater");
+		
+	}
+	else if(b>a && b>c)
+	{
+		System.out.println(b+" is greater");
+	}
+	else
+	{ System.out.println(c+" is greater");
+}
+
+}
+
+}
+Output : 
+Enter the 1st num to be compared
+10
+Enter the second num to be compared
+20
+enter the third num to be comparted:
+5
+20 is greater
+
