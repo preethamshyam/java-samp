@@ -1,0 +1,47 @@
+
+package control;
+
+import java.util.Scanner;
+
+public class ifstatement 
+{
+	public static void main(String args[])
+{
+		System.out.println("enter the month in numerals");
+		Scanner s=new Scanner(System.in);
+		int a=s.nextInt();
+			
+	if(a==12 || a==1 || a==2)
+	{
+		System.out.println("The Season is winter");
+		
+	}
+	else if(a==3 || a==4 || a==5)
+	{
+		System.out.println("The Season is spring");
+		
+	}
+	else if(a==6 || a==7 || a==8)
+	{
+		System.out.println("The Season is summer");
+		
+	}
+	else if(a==9 || a==10 || a==11)
+	{
+		System.out.println("The Season is autumn");
+		
+	}
+	else
+	{
+		System.out.println("Inavalid Month- please enter a valid month");
+	}
+}
+}
+Output:
+enter the month in numerals
+6
+The Season is summer
+
+enter the month in numerals
+15
+Inavalid Month- please enter a valid month
